@@ -5,5 +5,9 @@ public class HW3 {
         int x = 500;
         int y = 10;
         System.out.println(x/y);
+
+        int a = 70;
+        a += 5;
+        System.out.println(a);
     }
 }
