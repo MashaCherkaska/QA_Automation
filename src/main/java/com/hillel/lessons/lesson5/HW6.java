@@ -130,7 +130,9 @@ public class HW6 {
         double avgSecondTeam = (frag6 + frag7 + frag8 + frag9 + frag10) / count;
 
 
-        if (avgFirstTeam > avgSecondTeam) {
+        if (avgFirstTeam == avgSecondTeam) {
+            System.out.println("It's a draw! There must be one winner! Play again!");
+        } else if (avgFirstTeam > avgSecondTeam) {
             System.out.println("The winner is " + nameFirstTeam + " with average of frags: " + avgFirstTeam);
         } else {
             System.out.println("The winner is " + nameSecondTeam + " with average of frags: " + avgSecondTeam);
