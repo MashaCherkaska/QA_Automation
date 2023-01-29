@@ -1,5 +1,6 @@
 package com.hillel.lessons.lesson12.HW15;
 
+
 public class Cat {
 
     private String name;
@@ -13,12 +14,19 @@ public class Cat {
         this.weight = weight;
     }
 
+
     public String getName() {
+
         return name;
     }
 
-    public void setName(String name) {
+
+    public void setName(String name) throws IllegalArgumentException {
+        if ("".equals(name) || name == null) {
+            throw new IllegalArgumentException("The cat should have the name!");
+        }
         this.name = name;
+
     }
 
     public int getAge() {
@@ -27,11 +35,11 @@ public class Cat {
 
 
     public void setAge(int age) {
-        if (age >= 0) {
+        if (age >= 0 && age <= 20) {
             this.age = age;
             System.out.println("The age of cat is " + getAge());
         } else {
-            System.out.println(" The age of cat should be bigger than 0!");
+            System.out.println("The age of cat should be bigger than 0 and less than 20!");
         }
     }
 
@@ -60,14 +68,13 @@ public class Cat {
     public static void main(String[] args) {
 
 
-        Cat harry = new Cat("Harry", 10, 15);
+        Cat harry = new Cat("", 34, 45);
 
-        harry.setName("Jerry");
+        harry.setName("Fred");
         System.out.println("New name of cat is " + harry.getName());
-        harry.setAge(25);
-        harry.setWeight(34);
+        harry.setAge(56);
+        harry.setWeight(-2);
         harry.sayMeow();
-
 
     }
 }
