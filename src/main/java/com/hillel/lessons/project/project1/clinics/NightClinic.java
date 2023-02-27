@@ -1,4 +1,8 @@
-package com.hillel.lessons.project.project1;
+package com.hillel.lessons.project.project1.clinics;
+
+import com.hillel.lessons.project.project1.abstracts.Facility;
+import com.hillel.lessons.project.project1.enums.WorkDate;
+import com.hillel.lessons.project.project1.interfaces.HealthCare;
 
 public final class NightClinic extends Facility implements HealthCare {
 

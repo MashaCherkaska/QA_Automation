@@ -1,6 +1,8 @@
-package com.hillel.lessons.project.project1;
+package com.hillel.lessons.project.project1.clinics;
 
-public class StateClinic extends Facility{
+import com.hillel.lessons.project.project1.abstracts.Facility;
+
+public class StateClinic extends Facility {
 
     private String typeOfClinic;
     private int foundationDate;

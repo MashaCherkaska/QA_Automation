@@ -1,4 +1,9 @@
-package com.hillel.lessons.project.project1;
+package com.hillel.lessons.project.project1.main;
+
+import com.hillel.lessons.project.project1.clinics.NightClinic;
+import com.hillel.lessons.project.project1.clinics.PrivateClinic;
+import com.hillel.lessons.project.project1.clinics.StateClinic;
+import com.hillel.lessons.project.project1.enums.WorkDate;
 
 public class Main {
 

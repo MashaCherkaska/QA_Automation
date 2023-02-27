@@ -1,4 +1,4 @@
-package com.hillel.lessons.project.project1;
+package com.hillel.lessons.project.project1.abstracts;
 
 public abstract class Facility {
 

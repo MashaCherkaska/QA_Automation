@@ -1,4 +1,7 @@
-package com.hillel.lessons.project.project1;
+package com.hillel.lessons.project.project1.clinics;
+
+import com.hillel.lessons.project.project1.abstracts.Facility;
+import com.hillel.lessons.project.project1.interfaces.HealthCare;
 
 public class PrivateClinic extends Facility implements HealthCare {
 

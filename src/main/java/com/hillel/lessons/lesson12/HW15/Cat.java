@@ -70,7 +70,7 @@ public class Cat {
 
         Cat harry = new Cat("", 34, 45);
 
-        harry.setName("Fred");
+        harry.setName("");
         System.out.println("New name of cat is " + harry.getName());
         harry.setAge(56);
         harry.setWeight(-2);
