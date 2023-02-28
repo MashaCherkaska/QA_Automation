@@ -4,9 +4,6 @@ import com.hillel.lessons.lesson17.HW17.product.Product;
 import com.hillel.lessons.lesson17.HW17.product.ProductMarket;
 
 import java.util.ArrayList;
-
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 
@@ -19,17 +16,15 @@ public class Main {
         list.add(new Product("Tequila", 4.6));
         list.add(new Product("Vodka", 3.6));
         list.add(new Product("Gin", 10.3));
-
-
-        Collections.sort(list,
-                Comparator.comparing(Product::getName));
-        list.forEach(System.out::println);
+        list.add(new Product("Zubrovka", 10.0));
 
 
         ProductMarket productMarket = new ProductMarket(list);
         System.out.println(productMarket.getNames());
-        System.out.println(productMarket.getPrices());
-        System.out.println(productMarket.getPriceString());
+        System.out.println(productMarket.getNames1());
+        System.out.println(productMarket.getPrices1());
+        System.out.println(productMarket.getPrices2());
+        System.out.println(productMarket.getPriceToString());
 
 
     }
