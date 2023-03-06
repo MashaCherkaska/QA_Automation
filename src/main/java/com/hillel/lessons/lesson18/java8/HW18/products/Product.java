@@ -1,4 +1,4 @@
-package com.hillel.lessons.lesson18.java8;
+package com.hillel.lessons.lesson18.java8.HW18.products;
 
 public class Product {
 
@@ -28,9 +28,9 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "Product " +
                 "name='" + name + '\'' +
                 ", price=" + price +
-                '}';
+                '.';
     }
 }
